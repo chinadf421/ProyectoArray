@@ -7,12 +7,14 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [
 
 // Mostrar saludo personalizado usando localStorage
 function mostrarSaludo() {
+}
   const nombreGuardado = localStorage.getItem("nombre");
   const saludo = document.getElementById("saludo");
   if (nombreGuardado) {
     saludo.textContent = `Bienvenido. El último usuario ingresado es: ${nombreGuardado}.`;
   } else {
-    saludo.textContent = "Bienvenido. ¿Deseas agregar un nuevo usuario?.";
+    if (nombreGuardado) {
+      saludo.textContent = "Bienvenido. ¿Deseas agregar un nuevo usuario?.";
   }
 }
 
