@@ -1,21 +1,61 @@
 body {
-   font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 20px;
-   background-color: #a57a7a;
-   background: radial-gradient(circle, #a57a7a, #744e94); 
+  background-color: #a57a7a;
+  background: radial-gradient(circle, #a57a7a, #744e94);
+}
+.caja{
+  margin: center;
+  max-width: 600px;
 }
 ul {
-   margin-top: 20px;
-   list-style-type: none;
-   padding: 0;
+  margin-top: 20px;
+  list-style-type: max-content;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
 }
-li {
-   border: 10px solid var(--border-color);
-   border-right: 10px;
-   font-size: 18px;
-   padding: 4px;
 
-   background-color: #605c86;
-   margin-bottom: 5px;
-   border-radius: 4px;
+li {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 4px;
+  background-color: #605c86;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  max-width: 300px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #666;
+}
+
+input,
+button {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  max-width: 300px;
+}
+
+input {
+  width: 200px;
+  background-color: #e7e6e6;
+}
+
+button {
+  background-color: #e7e6e6;
+  cursor: progress;
+  transition: background-color 0.3s;
 }
